@@ -3,6 +3,7 @@
  
 # Recursos
  Herramientas necesarias para el funcionamiento del proyecto
+ 
  <ul>
   <li>Editor de código</li>
    <ul>
@@ -21,9 +22,11 @@
     <li>
      <a href="https://www.npmjs.com/" target="_blank">Build amazing things</a>
     </li>
-    <li>Desde el comand prompt npm install -g npm </li>
+    <li>Desde el comand prompt: npm install -g npm </li>
    </ul>
  </ul>
+ 
+# Contenido
 
 <table border="1" align="center">
 <tr>
