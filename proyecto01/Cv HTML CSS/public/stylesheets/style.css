@@ -1,0 +1,194 @@
+:root {
+    --color-1: #202020;
+    --color-2: #2c3e50;
+    --color-3: #bdc3c7;
+    --color-4: #77f2a1;
+  }
+
+body{
+    margin: 0%;
+    height: 3000px;
+}
+html{
+    background-color: #202020;
+}
+
+li, a, h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: aliceblue;
+    text-decoration: none;
+    margin: 0%;
+}
+header{
+    display: flex;
+    justify-content: end; /*ubica los botones al final*/
+    align-items: center;
+    padding: 15px 10%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-1);
+    position: relative;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{ /*cada item individual*/
+    /*lo pone uno debajo de otro*/
+    display: inline-block;
+    padding: 0px 20px; 
+}
+/*--------------------------------------------------------*/
+/*iconos*/
+.fa-linkedin:hover { /*cuando tengo mi mouse sobre el*/
+    color:rgb(45, 215, 161);
+}
+.fa-github:hover { /*cuando tengo mi mouse sobre el*/
+    color:rgb(45, 215, 161);
+}
+.fa-instagram:hover { /*cuando tengo mi mouse sobre el*/
+    color:rgb(45, 215, 161);
+}
+.fa-facebook:hover { /*cuando tengo mi mouse sobre el*/
+    color:rgb(45, 215, 161);
+}
+
+/*--------------------------------------------------------*/
+.yo{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--color-2); 
+    font-size: 150%;
+}
+.habilidades{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--color-3); 
+}
+.proyectos{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--color-2);
+}
+.sobre_mi{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--color-3);
+}
+/*grid de 3x3 para las cajas negras de habilidades*/
+.grid_habilidades {
+    position: relative;
+    top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 60px;
+    grid-row-gap: 60px;
+    padding: 30px;
+}
+
+/*caja negra de cada habilidad*/
+div.habilidad_container{
+    border-radius: 10px;
+    background-color: #202020;
+    text-align: center;
+}
+
+/*descripciones de las habilidades*/
+.txthab{
+    padding: 10px;
+}
+/*grid de 1x3 para mis proyectos*/
+.grid_proyectos {
+    position: relative;
+    top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 60px;
+    grid-row-gap: 60px;
+    padding: 30px;
+}
+
+/*caja negra de cada proyecto*/
+div.proyecto_container{
+    border-radius: 10px;
+    background-color: #202020;
+    text-align: center;
+}
+
+div.img_proyecto{
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: var(--color-3);   
+    text-align: center;
+}
+
+/*descripciones de los proyectos*/
+.txtproy{
+    padding: 20px;
+}
+/*texto de todas las secciones excepto de la primera*/
+.txt_secciones {
+    position: relative;
+    top:30px;
+    left: 25px;
+    padding: 20px;
+}
+/*texto de la primera seccion*/
+.txt_1{
+    position: relative;
+    font-size: 100%;
+    top:100px;
+    left: 60px;
+    box-sizing: border-box;
+}
+div.img_habilidad{
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: var(--color-3);   
+    text-align: center;
+}
+.info_container{
+    border-radius: 10px;
+    background-color: var(--color-2);
+    text-align: center;
+    padding: 30px;
+    margin: 30px;
+}
+
+div.info{
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+   
+    margin-bottom: 5px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: var(--color-3);   
+    text-align: center;
+}
+.info{
+    display: inline-block;
+  border: 1px solid red;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+}
+
