@@ -102,7 +102,9 @@ header {
 
 @media (min-width: 400px) {
     .txt_1 {
-        font-size: 90%;
+        font-size: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .txt_yo {
@@ -630,7 +632,7 @@ textarea {
 }
 
 img {
-    border: 3px solid #ddd;
+    border: 5px solid var(--color-3);
     border-radius: 10px;
     padding: 5px;
     width: 150px;
@@ -641,12 +643,9 @@ img:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
-div.mi_imagen {
+.txt_yo {
     width: fit-content;
+    padding: 100px;
     margin-left: auto;
     margin-right: auto;
-    
-}
-.mi_imagen{
-    top: 900px;
 }
