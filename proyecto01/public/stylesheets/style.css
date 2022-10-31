@@ -102,7 +102,7 @@ header {
 
 @media (min-width: 400px) {
     .txt_1 {
-        font-size: 80%;
+        font-size: 100%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -708,4 +708,5 @@ div.mapouter{
     height: 350px;
     bottom: 30px;
     width: 350px;
+    border-radius: 10px;
 }
