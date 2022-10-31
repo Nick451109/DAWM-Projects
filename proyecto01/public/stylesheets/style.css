@@ -3,32 +3,47 @@
     --color-2: #2c3e50;
     --color-3: #bdc3c7;
     --color-4: #77f2a1;
-  }
-.home{
+}
+
+.home {
     flex-wrap: wrap;
 }
 
-body{
+/*fuentes locales*/
+@font-face {
+    font-family: 'Product sans';
+    src: url(/fonts/P-regular.ttf);
+    font-style: regular;
+    font-weight: 100;
+
+}
+
+body {
     margin: 0%;
     height: 3000px;
 }
-html{
-    min-width:fit-content;
+
+html {
+    min-width: fit-content;
     overflow: auto;
     background-color: #202020;
 }
 
-li, a, h3{
-    font-family: Arial, Helvetica, sans-serif;
+li,
+a,
+h3 {
+    font-family: Product sans;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 20px;
     color: aliceblue;
     text-decoration: none;
     margin: 0%;
 }
-header{
+
+header {
     display: flex;
-    justify-content: end; /*ubica los botones al final*/
+    justify-content: end;
+    /*ubica los botones al final*/
     align-items: center;
     padding: 15px 10%;
     box-sizing: border-box;
@@ -38,147 +53,215 @@ header{
     position: relative;
 }
 
-.nav_links{
+.nav_links {
     list-style: none;
 }
 
-.nav_links li{ /*cada item individual*/
+.nav_links li {
+    /*cada item individual*/
     /*lo pone uno debajo de otro*/
     display: inline-block;
-    padding: 0px 20px; 
+    padding: 0px 20px;
 }
 
 /*--------------------------------------------------------*/
 /*iconos*/
-.fa-linkedin:hover { /*cuando tengo mi mouse sobre el*/
-    color:rgb(45, 215, 161);
+.fa-linkedin:hover {
+    /*cuando tengo mi mouse sobre el*/
+    color: rgb(45, 215, 161);
 }
-.fa-github:hover { /*cuando tengo mi mouse sobre el*/
-    color:rgb(45, 215, 161);
+
+.fa-github:hover {
+    /*cuando tengo mi mouse sobre el*/
+    color: rgb(45, 215, 161);
 }
-.fa-instagram:hover { /*cuando tengo mi mouse sobre el*/
-    color:rgb(45, 215, 161);
+
+.fa-instagram:hover {
+    /*cuando tengo mi mouse sobre el*/
+    color: rgb(45, 215, 161);
 }
-.fa-facebook:hover { /*cuando tengo mi mouse sobre el*/
-    color:rgb(45, 215, 161);
+
+.fa-facebook:hover {
+    /*cuando tengo mi mouse sobre el*/
+    color: rgb(45, 215, 161);
 }
 
 /*--------------------------------------------------------*/
-.yo{
+.yo {
     height: 100vh;
     width: 100%;
-    background-color: var(--color-2); 
-    font-size: 150%;
-    display: flex;
-    flex-wrap:wrap;
-    min-width: 300px;
-}
-.habilidades{
-    width: 100%;
-    height: 130vh;
-    background-color: var(--color-3); 
+    background-color: var(--color-2);
 }
 
-.sobre_mi{
+.txt_yo {
+    width: fit-content;
+}
+
+@media (min-width: 200px) {
+    .txt_1 {
+        font-size: 90%;
+    }
+}
+
+@media (min-width: 720px) {
+    .txt_1 {
+        font-size: 140%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .txt_1 {
+        font-size: 200%;
+    }
+}
+
+.habilidades {
+    width: 100%;
+    height: 130vh;
+    background-color: var(--color-3);
+}
+
+.sobre_mi {
     height: 100vh;
     width: 100%;
     background-color: var(--color-3);
 }
+
 @media (min-width: 200px) {
     .grid_habilidades {
-        position:relative;
+        top: 100px;
+        position: relative;
         width: fit-content;
         padding: 30px;
         margin-left: auto;
-        margin-right:auto;
+        margin-right: auto;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 30px;
         grid-row-gap: 30px;
-    }      
+    }
 }
+
 @media (min-width: 1100px) {
     .grid_habilidades {
-        position:relative;
+        top: 100px;
+        position: relative;
         width: fit-content;
         padding: 30px;
         margin-left: auto;
-        margin-right:auto;
+        margin-right: auto;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 30px;
         grid-row-gap: 30px;
-    }      
+    }
 }
+
 /*grid de 3x3 para las cajas negras de habilidades*/
 /*si es mayor a 1300px se hacen 3 columnas*/
 @media (min-width: 1200px) {
     .grid_habilidades {
-        position:relative;
+        top: 100px;
+        position: relative;
         width: fit-content;
         padding: 30px;
         margin-left: auto;
-        margin-right:auto;
+        margin-right: auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 30px;
         grid-row-gap: 30px;
-    }      
+    }
 }
 
 /*caja negra de cada habilidad*/
-div.habilidad_container{
-    width:300px;
+div.habilidad_container {
+    width: 300px;
     border-radius: 10px;
     background-color: #202020;
     text-align: center;
 }
 
 /*descripciones de las habilidades*/
-.txthab{
+.txthab {
     padding: 10px;
-    
+
 }
 
-.proyectos{
+.proyectos {
     height: 200%;
     width: 100%;
     background-color: var(--color-2);
 }
-div.proyectos{
+
+div.proyectos {
     height: 1000px;
 }
+
 /*grid de 1x3 para mis proyectos*/
-@media (min-width: 300px) {
+@media (min-width: 200px) {
     .grid_proyectos {
-        position: relative;
         top: 100px;
+        position: relative;
+        width: fit-content;
+        padding: 30px;
+        margin-left: auto;
+        margin-right: auto;
         display: grid;
-        height: 400px;
-        
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 60px;
+        grid-row-gap: 30px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .grid_proyectos {
+        top: 100px;
+        position: relative;
+        width: fit-content;
+        padding: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 60px;
+        grid-row-gap: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .grid_proyectos {
+        top: 100px;
+        position: relative;
+        width: fit-content;
+        padding: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(1, 1fr);
         grid-column-gap: 60px;
-        grid-row-gap: 60px;
-        padding: 30px;
+        grid-row-gap: 30px;
     }
-  }
+}
 
 
 /*caja negra de cada proyecto*/
-div.proyecto_container{
+div.proyecto_container {
     height: 400px;
     width: 300px;
     border-radius: 10px;
     background-color: #202020;
-    text-align: center; 
+    text-align: center;
     flex: 2;
 }
 
-div.img_proyecto{
+div.img_proyecto {
     width: 150px;
     height: 150px;
     margin-left: auto;
@@ -187,32 +270,41 @@ div.img_proyecto{
     margin-bottom: 5px;
     padding: 30px;
     border-radius: 10px;
-    background-color: var(--color-3);   
+    background-color: var(--color-3);
     text-align: center;
 }
 
 /*descripciones de los proyectos*/
-.txtproy{
+.txtproy {
     padding: 20px;
 }
+
 /*texto de todas las secciones excepto de la primera*/
 .txt_secciones {
     position: relative;
-    top:30px;
+    top: 50px;
     padding: 20px;
-    object-fit: fill;
-    width: 20%;
+    width: fit-content;
+    left: 100px;
+    font-size: 50px;
 }
+
 /*texto de la primera seccion*/
-.txt_1{
+.txt_1 {
+    top: 60px;
+    left: 40px;
+    width: fit-content;
+    padding: 20px;
     position: relative;
-    font-size: 100%;
-    top:100px;
-    left: 60px;
     box-sizing: border-box;
-    
 }
-div.img_habilidad{
+
+div.txt_1 {
+    display: flex;
+    flex-direction: column;
+}
+
+div.img_habilidad {
     width: 100px;
     height: 100px;
     margin-left: auto;
@@ -221,15 +313,17 @@ div.img_habilidad{
     margin-bottom: 5px;
     padding: 30px;
     border-radius: 10px;
-    background-color: var(--color-3);   
+    background-color: var(--color-3);
     text-align: center;
 }
-div.sobre_mi{
+
+div.sobre_mi {
     height: 150vh;
     width: 100%;
 
 }
-.info_container{
+
+.info_container {
     border-radius: 10px;
     background-color: var(--color-2);
     text-align: center;
@@ -240,9 +334,7 @@ div.sobre_mi{
     margin-left: auto;
     margin-right: auto;
     width: 1300px;
-    height: 600px;
-
-    
+    height: 400px;
 }
 
 /*
@@ -259,10 +351,9 @@ div.info{
     text-align: center;
 }
 */
-.info{
+.info {
     display: inline-block;
     border: 1px solid red;
     padding: 1rem 1rem;
     vertical-align: middle;
 }
-
