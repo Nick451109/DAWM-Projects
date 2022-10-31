@@ -49,6 +49,7 @@ header {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    min-width: none;
     background-color: var(--color-1);
     position: relative;
 }
@@ -127,6 +128,7 @@ header {
     background-color: var(--color-3);
 }
 
+/*SMALL CASE*/
 @media (min-width: 200px) {
     .grid_habilidades {
         top: 100px;
@@ -141,8 +143,45 @@ header {
         grid-column-gap: 30px;
         grid-row-gap: 30px;
     }
+
+    div.habilidades {
+        height: 2200px;
+    }
+
+    /*grid de 1x3 para mis proyectos*/
+    .grid_proyectos {
+        top: 100px;
+        position: relative;
+        width: fit-content;
+        padding: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 60px;
+        grid-row-gap: 30px;
+    }
+
+    .info_container {
+        border-radius: 10px;
+        background-color: var(--color-2);
+        text-align: center;
+        padding: 30px;
+
+        position: relative;
+        top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+        height: 400px;
+    }
+    div.proyectos {
+        height: 1700px;
+    }
 }
 
+/*MEDIUM CASE*/
 @media (min-width: 1100px) {
     .grid_habilidades {
         top: 100px;
@@ -157,11 +196,58 @@ header {
         grid-column-gap: 30px;
         grid-row-gap: 30px;
     }
+
+    div.habilidades {
+        height: 1400px;
+    }
+
+    .grid_proyectos {
+        top: 100px;
+        position: relative;
+        width: fit-content;
+        padding: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 60px;
+        grid-row-gap: 30px;
+    }
+
+    .info_container {
+        border-radius: 10px;
+        background-color: var(--color-2);
+        text-align: center;
+        padding: 30px;
+
+        position: relative;
+        top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 790px;
+        height: 400px;
+    }
+
+    /*texto de todas las secciones excepto de la primera*/
+    .txt_secciones {
+        position: relative;
+        top: 50px;
+        padding: 20px;
+        width: fit-content;
+        font-size: 50px;
+        text-align: center;
+    }
+    div.proyectos {
+        height: 2000px;
+    }
 }
 
-/*grid de 3x3 para las cajas negras de habilidades*/
-/*si es mayor a 1300px se hacen 3 columnas*/
+/*LARGE CASE*/
 @media (min-width: 1200px) {
+
+    /*grid de 3x3 para las cajas negras de habilidades*/
+    /*si es mayor a 1300px se hacen 3 columnas*/
     .grid_habilidades {
         top: 100px;
         position: relative;
@@ -174,6 +260,51 @@ header {
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 30px;
         grid-row-gap: 30px;
+    }
+
+    div.habilidades {
+        height: 1200px;
+    }
+
+    .grid_proyectos {
+        top: 100px;
+        position: relative;
+        width: fit-content;
+        padding: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 60px;
+        grid-row-gap: 30px;
+    }
+
+    .info_container {
+        border-radius: 10px;
+        background-color: var(--color-2);
+        text-align: center;
+        padding: 30px;
+
+        position: relative;
+        top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 940px;
+        height: 400px;
+    }
+
+    /*texto de todas las secciones excepto de la primera*/
+    .txt_secciones {
+        position: relative;
+        top: 50px;
+        padding: 20px;
+        width: fit-content;
+        left: 100px;
+        font-size: 50px;
+    }
+    div.proyectos {
+        height: 1000px;
     }
 }
 
@@ -197,58 +328,6 @@ div.habilidad_container {
     background-color: var(--color-2);
 }
 
-div.proyectos {
-    height: 1000px;
-}
-
-/*grid de 1x3 para mis proyectos*/
-@media (min-width: 200px) {
-    .grid_proyectos {
-        top: 100px;
-        position: relative;
-        width: fit-content;
-        padding: 30px;
-        margin-left: auto;
-        margin-right: auto;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        grid-column-gap: 60px;
-        grid-row-gap: 30px;
-    }
-}
-
-@media (min-width: 1100px) {
-    .grid_proyectos {
-        top: 100px;
-        position: relative;
-        width: fit-content;
-        padding: 30px;
-        margin-left: auto;
-        margin-right: auto;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        grid-column-gap: 60px;
-        grid-row-gap: 30px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .grid_proyectos {
-        top: 100px;
-        position: relative;
-        width: fit-content;
-        padding: 30px;
-        margin-left: auto;
-        margin-right: auto;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        grid-column-gap: 60px;
-        grid-row-gap: 30px;
-    }
-}
 
 
 /*caja negra de cada proyecto*/
@@ -279,15 +358,7 @@ div.img_proyecto {
     padding: 20px;
 }
 
-/*texto de todas las secciones excepto de la primera*/
-.txt_secciones {
-    position: relative;
-    top: 50px;
-    padding: 20px;
-    width: fit-content;
-    left: 100px;
-    font-size: 50px;
-}
+
 
 /*texto de la primera seccion*/
 .txt_1 {
@@ -323,19 +394,7 @@ div.sobre_mi {
 
 }
 
-.info_container {
-    border-radius: 10px;
-    background-color: var(--color-2);
-    text-align: center;
-    padding: 30px;
 
-    position: relative;
-    top: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1300px;
-    height: 400px;
-}
 
 /*
 div.info{
