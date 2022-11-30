@@ -1,0 +1,6 @@
+<div class="col-lg-3">
+    <div class="test-inner ">
+        <span><!-- FRASE DEL AUTOR --></span>
+        <i class="fa fa-quote-right"></i>
+    </div>
+</div>

@@ -1,317 +1,115 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
-  <head>
-    
-    <!-- 
-    ------------------------------------------------------------------------------------------------------------------------------------------
-                                                                    Animate.style 
-    ------------------------------------------------------------------------------------------------------------------------------------------
-    -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    
-
+<head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="it">
+    <meta name="keywords" content="Rapoo,creative, agency, startup,onepage, clean, modern,business, company,it">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <meta name="author" content="themefisher.com">
+    <title>NTF Searcher</title>
+    <!-- bootstrap.min css -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Animate Css -->
+    <link rel="stylesheet" href="plugins/animate-css/animate.css">
+    <!-- Icon Font css -->
+    <link rel="stylesheet" href="plugins/fontawesome/css/all.css">
+    <link rel="stylesheet" href="plugins/fonts/Pe-icon-7-stroke.css">
+    <!-- Themify icon Css -->
+    <link rel="stylesheet" href="plugins/themify/css/themify-icons.css">
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" href="plugins/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="plugins/slick-carousel/slick/slick-theme.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
 
-    <title>Cyborg - Awesome HTML5 Template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/charts.min.css">
+</head>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    
-    <!-- 
-    ------------------------------------------------------------------------------------------------------------------------------------------
-                                                                    charts.css 
-    ------------------------------------------------------------------------------------------------------------------------------------------
-    -->
-    <link rel="stylesheet" href="assets/css/charts.min.css">
-
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-cyborg-gaming.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="drop-theme-arrows.css" />
-    <link rel="stylesheet" href="assets/css/project-designs.css">
-    <script src="tether.min.js"></script>
-    <script src="drop.min.js"></script>
-<!--
-
-TemplateMo 579 Cyborg Gaming
-
-https://templatemo.com/tm-579-cyborg-gaming
-
--->
-  </head>
-
-<body>
-
-  <!-- ***** Preloader Start ***** -->
-  <div id="js-preloader" class="js-preloader">
-    <div class="preloader-inner">
-      <span class="dot"></span>
-      <div class="dots">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </div>
-  <!-- ***** Preloader End ***** -->
-
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
-                        <img src="assets/images/logo.png" alt="">
-                    </a>
-                    <!-- ***** Logo End ***** -->
-                    <!-- ***** Search End ***** -->
-                    <div class="search-input">
-                      <form id="search" action="#">
-                        <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
-                        <i class="fa fa-search"></i>
-                      </form>
-                    </div>
-                    <!-- ***** Search End ***** -->
-                    <!-- ***** Menu Start ***** -->
-                    <ul class="nav">
-                        <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="browse.html">Browse</a></li>
-                        <li><a href="details.html">Details</a></li>
-                        <li><a href="streams.html">Streams</a></li>
-                        <li><a href="profile.html">Profile <img src="assets/images/profile-header.jpg" alt=""></a></li>
-                    </ul>   
-                    <a class='menu-trigger'>
-                        <span>Menu</span>
-                    </a>
-                    <!-- ***** Menu End ***** -->
-                </nav>
-            </div>
-        </div>
-    </div>
-  </header>
-  <!-- ***** Header Area End ***** -->
-
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="page-content">
-
-          <!-- ***** Banner Start ***** -->
-          <div class="main-banner">
-            <div class="row">
-              <div class="col-lg-7">
-                <div class="header-text">
-                  <h6 class="animate__animated animate__pulse">Welcome To Cyborg</h6>
-                  <h4 class="animate__animated animate__bounce"><em>Browse</em> Our Popular Games Here</h4>
-                  <div class="main-button">
-                    <a href="browse.html">Browse Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- ***** Banner End ***** -->
-
-          <!-- ***** Most Popular Start ***** -->
-          <div class="most-popular">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="heading-section">
-                  <h4><em>Most Popular</em> Right Now</h4>
-                </div>
-                <div class="row">
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="item">
-                      <img src="assets/images/popular-01.jpg" alt="">
-                      <h4>Fortnite<br><span>Sandbox</span></h4>
-                      <ul>
-                        <li><i class="fa fa-star"></i> 4.8</li>
-                        <li><i class="fa fa-download"></i> 2.3M</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="item">
-                      <img src="assets/images/popular-02.jpg" alt="">
-                      <h4>PubG<br><span>Battle S</span></h4>
-                      <ul>
-                        <li><i class="fa fa-star"></i> 4.8</li>
-                        <li><i class="fa fa-download"></i> 2.3M</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="item">
-                      <img src="assets/images/popular-03.jpg" alt="">
-                      <h4>Dota2<br><span>Steam-X</span></h4>
-                      <ul>
-                        <li><i class="fa fa-star"></i> 4.8</li>
-                        <li><i class="fa fa-download"></i> 2.3M</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="item">
-                      <img src="assets/images/popular-04.jpg" alt="">
-                      <h4>CS-GO<br><span>Legendary</span></h4>
-                      <ul>
-                        <li><i class="fa fa-star"></i> 4.8</li>
-                        <li><i class="fa fa-download"></i> 2.3M</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="item">
-                      <div class="row">
-                        <div class="col-lg-6 col-sm-6">
-                          <div class="item inner-item">
-                            <img src="assets/images/popular-05.jpg" alt="">
-                            <h4>Mini Craft<br><span>Legendary</span></h4>
-                            <ul>
-                              <li><i class="fa fa-star"></i> 4.8</li>
-                              <li><i class="fa fa-download"></i> 2.3M</li>
-                            </ul>
-                          </div>
+<body id="top-header">
+    <section class="section" id="section-testimonial">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12 col-sm-12 col-md-12">
+                    <form class="contact_form" action="">
+                        <div class="row">
+                            <!-- Input -->
+                            <div class="col-sm-12 mt-2 mb-6">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <select name="select" class="custom-select custom-select-lg form-control "
+                                            required="">
+                                            <option value="-1" selected="">Select a Nft</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-lg-6 col-sm-6">
-                          <div class="item">
-                            <img src="assets/images/popular-06.jpg" alt="">
-                            <h4>Eagles Fly<br><span>Matrix Games</span></h4>
-                            <ul>
-                              <li><i class="fa fa-star"></i> 4.8</li>
-                              <li><i class="fa fa-download"></i> 2.3M</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="item">
-                      <img src="assets/images/popular-07.jpg" alt="">
-                      <h4>Warface<br><span>Max 3D</span></h4>
-                      <ul>
-                        <li><i class="fa fa-star"></i> 4.8</li>
-                        <li><i class="fa fa-download"></i> 2.3M</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="item">
-                      <img src="assets/images/popular-08.jpg" alt="">
-                      <h4>Warcraft<br><span>Legend</span></h4>
-                      <ul>
-                        <li><i class="fa fa-star"></i> 4.8</li>
-                        <li><i class="fa fa-download"></i> 2.3M</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-12">
-                    <div class="main-button">
-                      <a href="browse.html">Discover Popular</a>
-                    </div>
-                  </div>
+                    </form>
                 </div>
-              </div>
+                <div class="col-lg-12 col-sm-12 col-md-12">
+
+                    <div id="frases" class="row">
+
+
+
+
+                    </div>
+                </div>
             </div>
-          </div>
-          <!-- ***** Most Popular End ***** -->
-
-          <!-- ***** CHART Start ***** -->
-          <div class="gaming-library">
-            
-            <table id="line-example-4" class="charts-css line show-heading">
-              <caption> Descriptive Chart Heading </caption>
-              <tbody>
-                <tr>
-                  <td style="--start: 0.0; --size: 0.4;"></td>
-                </tr>
-                <tr>
-                  <td style="--start: 0.4; --size: 0.2;"></td>
-                </tr>
-                <tr>
-                  <td style="--start: 0.2; --size: 0.6;"></td>
-                </tr>
-                <tr>
-                  <td style="--start: 0.6; --size: 0.4;"></td>
-                </tr>
-                <tr>
-                  <td style="--start: 0.4; --size: 0.8;"></td>
-                </tr>
-                <tr>
-                  <td style="--start: 0.8; --size: 0.6;"></td>
-                </tr>
-                <tr>
-                  <td style="--start: 0.6; --size: 1.0;"></td>
-                </tr>
-              </tbody>
-            </table>
-
-            <!-- -------------------------chart 2----------------------------------- -->
-
-            <table id="data-example-2" class="charts-css column">
-              <caption> Data Example #2 - Front End Developer Salary </caption>
-              <tbody class="chart">
-                <tr>
-                  <td style="--size: calc( 40 / 100 );"> $40K </td>
-                </tr>
-                <tr>
-                  <td style="--size: calc( 60 / 100 );"> $60K </td>
-                </tr>
-                <tr>
-                  <td style="--size: calc( 75 / 100 );"> $75K </td>
-                </tr>
-                <tr>
-                  <td style="--size: calc( 90 / 100 );"> $90K </td>
-                </tr>
-                <tr>
-                  <td style="--size: calc( 100 / 100 );"> $100K </td>
-                </tr>
-              </tbody>
-            </table>
-            
-          <!-- ***** CHART Library End ***** -->
         </div>
-      </div>
-    </div>
-  </div>
-  
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <p>Copyright © 2036 <a href="#">Cyborg Gaming</a> Company. All rights reserved. 
-          
-          <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a>  Distributed By <a href="https://themewagon.com" target="_blank" >ThemeWagon</a></p>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </section>
+    <footer class="section " id="footer">
+        <div class="overlay footer-overlay"></div>
+        <!--Content -->
+        <div class="container">
+            <div class="row justify-content-start">
+                <div class="col-lg-12 col-sm-12">
+                    <div class="footer-widget">
+                        <!-- Brand -->
+                        <a href="https://themefisher.com/products/rappo" class="footer-brand text-white">
+                            <h3 class="animate__animated animate__shakeX">Hot Nft Consultant</h3>
+                        </a>
+                        <p>
+                            <h3 class="animate__animated animate__flip">Get the latest info about nft's in a single click</h3>
+                        </p>
+                    </div>
+                </div>
 
 
-  <!-- Scripts -->
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-  <script src="assets/js/isotope.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/tabs.js"></script>
-  <script src="assets/js/popup.js"></script>
-  <script src="assets/js/custom.js"></script>
+            </div> <!-- / .row -->
 
 
-  </body>
+            <div class="row text-right pt-5">
+                <div class="col-lg-12">
+                    <!-- Copyright -->
+                    <p class="footer-copy">
+                         <span class="current-year"><a 
+                                href="https://www.linkedin.com/in/nick-ar%C3%A9valo-ronquillo-6a0825210/"
+                                title="">nckcr</a></span> 
+                    </p>
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </footer>
+
+    <!--
+        Essential Scripts
+        =====================================-->
+
+    <!-- Main jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 3.1 -->
+    <script src="plugins/bootstrap/js/popper.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="js/theme.js"></script>
+
+    <!-- Referencia al archivo ejercicio.js -->
+    <script src="js/ejercicio.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
 
 </html>
