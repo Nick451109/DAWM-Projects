@@ -10,8 +10,12 @@
 }
 
 .container_api{
-  display: flex;
-  
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.container_api > div {
+  margin: 20px;
 }
 
 .chart body {
@@ -23,7 +27,7 @@
 }
 
 #data-example-2 {
-  height: 200px;
+  height: 600px;
   max-width: 300px;
   margin: 0 auto;
 }
